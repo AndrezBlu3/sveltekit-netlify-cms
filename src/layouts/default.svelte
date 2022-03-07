@@ -5,7 +5,7 @@
 	let parallax;
 	let disabled = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 	
-	const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
+	const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`;
 </script>
 
 <svelte:head>
