@@ -1,6 +1,11 @@
-<script>  
-  
-  export let title
+
+<script>
+	import { Parallax, ParallaxLayer} from 'svelte-parallax'
+	export let title
+	let parallax;
+	let disabled = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+	
+	const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 </script>
 
 <svelte:head>
@@ -8,14 +13,6 @@
 </svelte:head>
 
 
-<script>
-	import { Parallax, ParallaxLayer} from 'svelte-parallax'
-	
-	let parallax;
-	let disabled = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-	
-	const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
-</script>
 
 <Parallax sections=3 style="background-color: #253237;" {disabled} bind:this={parallax}>
 		<ParallaxLayer offset=1 rate=1 style="background-color: #87BCDE;" />
