@@ -1,5 +1,5 @@
 <script>  
-  import {routes} from '../metadata'
+  import {routes} from '../metadata.js'
   
   export let title
 </script>
