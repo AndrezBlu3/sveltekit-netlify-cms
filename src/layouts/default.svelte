@@ -8,9 +8,6 @@
 </svelte:head>
 
 
-
-<slot />
-
 <script>
 	import { Parallax, ParallaxLayer} from 'svelte-parallax'
 	
