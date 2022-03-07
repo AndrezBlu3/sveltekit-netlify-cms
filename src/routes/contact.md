@@ -1,6 +1,15 @@
 ---
 label: Contact
 title: Contact Us
+nav_label: Prueba
 ---
+<script>
+	let a = 1;
+	let b = 2;
+</script>
 
-This is where the contact form will go
+<input type="number" bind:value={a}>
+<input type="number" bind:value={b}>
+
+<p>{a} + {b} = {a + b}</p>
+T
