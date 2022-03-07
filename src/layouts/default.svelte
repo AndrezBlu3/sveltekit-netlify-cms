@@ -12,7 +12,7 @@
   <title>{title}</title>
 </svelte:head>
 
-
+<slot/>
 
 <Parallax sections=3 style="background-color: #253237;" {disabled} bind:this={parallax}>
 		<ParallaxLayer offset=1 rate=1 style="background-color: #87BCDE;" />
