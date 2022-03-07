@@ -1,7 +1,7 @@
 ---
 label: Home
-title: SvelteKit Netlify CMS
-nav_label: Inicio
+title: Magica Nocturna
+nav_label: Home
 ---
 <script>
 	import { Parallax, ParallaxLayer} from 'svelte-parallax'
