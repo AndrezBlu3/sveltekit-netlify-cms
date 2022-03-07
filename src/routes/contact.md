@@ -12,4 +12,3 @@ nav_label: Prueba
 <input type="number" bind:value={b}>
 
 <p>{a} + {b} = {a + b}</p>
-T
